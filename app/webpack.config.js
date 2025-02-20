@@ -40,10 +40,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
+    // After list.html
     new HtmlWebpackPlugin({
-      template: "./index.html",
-      chunks: ["index", "main"],
-      filename: "index.html",
+      template: "./list.html",
+      chunks: ["list"],
+      filename: "list.html",
     }),
   ],
   devServer: {
